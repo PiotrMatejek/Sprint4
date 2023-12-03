@@ -373,9 +373,9 @@ console.log(longTextChange(textArray));
 
 // 20. Napisz funkcję, która przy użyciu metody map zwróci każdy element tablicy zapisany wielkimi literami
 function textUpper(textArray) {
-  const textUpper = textArray.map((text) => text.toUpperCase());
+  const textUpperCase = textArray.map((text) => text.toUpperCase());
 
-  return textUpper;
+  return textUpperCase;
 }
 
 console.log(textUpper(textArray));
