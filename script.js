@@ -133,6 +133,7 @@ const persons = {
   name: "Krzych",
   age: 100,
 };
+
 function loopObject(persons) {
   for (const person in persons) {
     console.log(person);
@@ -143,6 +144,7 @@ loopObject(persons);
 
 // 6. Napisz funkcję, która użyje pętli for of do iteracji po elementach tablicy
 const numberOfUsers = [10, 50, 5, 100];
+
 function loopArray(users) {
   for (const user of users) {
     console.log(user);
@@ -298,20 +300,36 @@ console.log(unshiftItemShift(15, arrayPush));
 // 11. Napisz funkcję, która przy użyciu metody map zwiększy każdy element tablicy o 1
 const valuesArray = [2, 7, 10, 11, 20, 30, 39];
 
-const newArray = valuesArray.map((num) => num + 1);
-console.log(newArray);
+function increaseValue(valuesArray) {
+  const newArray = valuesArray.map((num) => num + 1);
+  return newArray;
+}
+
+console.log(increaseValue(valuesArray));
 
 // 12. Napisz funkcję, która przy użyciu metody filter zwróci tylko parzyste liczby z tablicy
-const newFilterArray = valuesArray.filter((num) => num % 2 === 0);
-console.log(newFilterArray);
+function findEvenValue(valuesArray) {
+  const newFilterArray = valuesArray.filter((num) => num % 2 === 0);
+  return newFilterArray;
+}
+
+console.log(findEvenValue(valuesArray));
 
 // 13. Napisz funkcję, która przy użyciu metody map podwoi każdy element tablicy
-const doubleValue = valuesArray.map((num) => num * 2);
-console.log(doubleValue);
+function double(valuesArray) {
+  const doubleValue = valuesArray.map((num) => num * 2);
+  return doubleValue;
+}
+
+console.log(double(valuesArray));
 
 // 14. Napisz funkcję, która przy użyciu metody filter zwróci elementy tablicy większe niż 10
-const filterElements = valuesArray.filter((num) => num > 10);
-console.log(filterElements);
+function findBiggerElements(valuesArray) {
+  const filterElements = valuesArray.filter((num) => num > 10);
+  return filterElements;
+}
+
+console.log(findBiggerElements(valuesArray));
 
 // 15. Napisz funkcję, która przy użyciu metody split podzieli podany ciąg znaków na słowa
 const splitText = (text) => text.split(" ");
@@ -321,22 +339,43 @@ console.log(splitText("Akademia Devstock"));
 // 16. Napisz funkcję, która przy użyciu metody map zamieni każdy element tablicy na jego długość
 const textArray = ["dog", "monday", "tuesday", "wednesday", "thursday", "cat"];
 
-const textLength = textArray.map((text) => text.length);
-console.log(textLength);
+function checkLenght(textArray) {
+  const textLength = textArray.map((text) => text.length);
+  return textLength;
+}
+
+console.log(checkLenght(textArray));
 
 // 17. Napisz funkcję, która przy użyciu metody filter zwróci tylko nieparzyste liczby z tablicy
 const numbersItems = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-const oddItems = numbersItems.filter((num) => num % 2 !== 0);
-console.log(oddItems);
+function findOdd(numbersItems) {
+  const oddItems = numbersItems.filter((num) => num % 2 !== 0);
+  return oddItems;
+}
+
+console.log(findOdd(numbersItems));
 
 // 18. Napisz funkcję, która przy użyciu metody map zwróci kwadraty każdego elementu tablicy
-const squareItems = numbersItems.map((num) => num * num);
-console.log(squareItems);
+function doubleItems(numbersItems) {
+  const squareItems = numbersItems.map((num) => num * num);
+  return squareItems;
+}
+
+console.log(doubleItems(numbersItems));
 
 // 19. Napisz funkcję, która przy użyciu metody filter zwróci tylko te słowa z ciągu znaków, które mają więcej niż 3 litery
-const longText = textArray.filter((text) => text.length > 3);
-console.log(longText);
+function longTextChange(textArray) {
+  const longText = textArray.filter((text) => text.length > 3);
+  return longText;
+}
+
+console.log(longTextChange(textArray));
 
 // 20. Napisz funkcję, która przy użyciu metody map zwróci każdy element tablicy zapisany wielkimi literami
-const textUpperCase = textArray.map((text) => text.toUpperCase());
-console.log(textUpperCase);
+function textUpper(textArray) {
+  const textUpper = textArray.map((text) => text.toUpperCase());
+
+  return textUpper;
+}
+
+console.log(textUpper(textArray));
