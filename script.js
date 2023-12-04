@@ -196,18 +196,28 @@ function maxNumber(numbers) {
 maxNumber(items);
 
 // 10. Napisz funkcję, która użyje pętli for in do wyświetlenia par klucz-wartość tablicy obiektów
-const users = {
-  name: "Piotrek",
-  age: 39,
-  country: "Poland",
-};
-function keyValueLoop(users) {
-  for (const key in users) {
-    console.log(`${key} : ${users[key]}`);
-  }
+const person = [
+  {
+    name: "Piotrek",
+    age: 39,
+    country: "Poland",
+  },
+  {
+    name: "Kazik",
+    age: 89,
+    country: "Italy",
+  },
+];
+
+function keyValueLoop(person) {
+  person.forEach((users) => {
+    for (const key in users) {
+      console.log(`${key} : ${users[key]}`);
+    }
+  });
 }
 
-keyValueLoop(users);
+keyValueLoop(person);
 
 //PODSTAWOWE METODY NA TABLICACH:
 
