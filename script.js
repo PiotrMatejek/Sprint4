@@ -156,7 +156,7 @@ loopArray(numberOfUsers);
 const arrayValues = [20, 40, 60];
 
 function sumArray(arrayNumbers) {
-  counter = 0;
+  let counter = 0;
   for (const num of arrayNumbers) {
     counter += num;
   }
