@@ -32,9 +32,9 @@ const square = (a) => a * a;
 console.log(square(5));
 
 // 5. Napisz funkcję zwracającą odwrotność liczby
-const inverseNumber = (number) => -number;
+const inverseNumber = (number) => 1 / number;
 
-console.log(inverseNumber(-100));
+console.log(inverseNumber(100));
 
 // 6. Napisz funkcję konwertującą stopnie Celsjusza na Fahrenheita
 function CelsiusToFahrenheit(degree) {
